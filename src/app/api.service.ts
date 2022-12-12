@@ -17,6 +17,9 @@ export class ApiService {
     return this.http.post("http://localhost:8080/addtask",DataToSend)
 
   }
+  viewTask=()=>{
+    return this.http.get("http://localhost:8080/viewtask")
 
+  }
 
 }

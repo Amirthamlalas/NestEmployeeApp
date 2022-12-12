@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewTaskComponent } from './view-task/view-task.component';
 const myroute:Routes=[
   {
     path:"",
@@ -27,6 +28,10 @@ const myroute:Routes=[
   {
     path:"addtask",
     component:AddTaskComponent
+  },
+  {
+    path:"viewtask",
+    component:ViewTaskComponent
   }
  
 ]
@@ -37,7 +42,8 @@ const myroute:Routes=[
     EmployeeComponent,
     AddEmployeeComponent,
     AddTaskComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewTaskComponent
   ],
   imports: [
     BrowserModule,
