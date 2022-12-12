@@ -10,6 +10,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 const myroute:Routes=[
   {
     path:"",
@@ -35,7 +36,8 @@ const myroute:Routes=[
     AdminComponent,
     EmployeeComponent,
     AddEmployeeComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
