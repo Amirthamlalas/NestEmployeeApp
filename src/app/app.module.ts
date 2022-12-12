@@ -7,7 +7,28 @@ import { AdminComponent } from './admin/admin.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddTaskComponent } from './add-task/add-task.component';
-
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+const myroute:Routes=[
+  {
+    path:"",
+    component:AdminComponent
+  },
+  {
+    path:"employee",
+    component:EmployeeComponent
+  },
+  {
+    path:"addemployee",
+    component:AddEmployeeComponent
+  },
+  {
+    path:"addtask",
+    component:AddTaskComponent
+  }
+ 
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +39,10 @@ import { AddTaskComponent } from './add-task/add-task.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
