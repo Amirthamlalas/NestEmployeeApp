@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewTaskComponent } from './view-task/view-task.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 const myroute:Routes=[
   {
     path:"",
@@ -32,6 +33,14 @@ const myroute:Routes=[
   {
     path:"viewtask",
     component:ViewTaskComponent
+  },
+  {
+    path:"employeelogin",
+    component:EmployeeComponent
+  },
+  {
+    path:"profile",
+    component:EmployeeProfileComponent
   }
  
 ]
@@ -43,7 +52,8 @@ const myroute:Routes=[
     AddEmployeeComponent,
     AddTaskComponent,
     NavbarComponent,
-    ViewTaskComponent
+    ViewTaskComponent,
+    EmployeeProfileComponent
   ],
   imports: [
     BrowserModule,

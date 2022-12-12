@@ -21,5 +21,12 @@ export class ApiService {
     return this.http.get("http://localhost:8080/viewtask")
 
   }
+  loginData=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/userlogin",DataToSend)
 
+  }
+  viewProfile=(DataToSend:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",DataToSend)
+
+  }
 }
